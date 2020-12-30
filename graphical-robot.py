@@ -14,7 +14,7 @@ def rectangle(horizontal, vertical, color):
     t.end_fill()
     t.penup()    
 t.penup()
-t.speed('slow')
+t.speed('fast')
 t.bgcolor('Dodger blue')
 # feet
 t.goto(-100, -150)
