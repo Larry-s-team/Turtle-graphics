@@ -17,6 +17,7 @@ def draw_star(points, size, col, x, y):
 
 
 #main code
+t.hideturtle()
 t.bgcolor('dark blue')
 
 
