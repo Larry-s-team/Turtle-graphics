@@ -35,6 +35,17 @@ def inside_window():
     return inside
 
 
+def move_turtle(line_length):
+    pen_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+    t.pencolor(random.choice(pen_colors))
+    if inside_window():
+        angle = random.randint(0, 180)
+        t.right(angle)
+        t.forward(line_length)
+    else:
+        t.backward(line_length)
+
+
 line_length = get_line_length()
 line_width = get_line_width()
 
@@ -44,3 +55,7 @@ t.fillcolor('green')
 t.bgcolor('black')
 t.speed('fastest')
 t.pensize(line_width)
+
+
+while True:
+    move_turtle(line_length)
